@@ -1,0 +1,6 @@
+mybatis:
+    mapper-locations: classpath*:mapping/*.xml
+##激活其他的yml配置文件
+spring:
+  profiles:
+    active: druid

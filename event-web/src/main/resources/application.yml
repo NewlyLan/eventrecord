@@ -1,0 +1,7 @@
+##把mapper层单独分出一个子模块，虽然加了MapperScan，但是如果不加这个，会识别不了mapper.xml文件
+mybatis:
+    mapper-locations: classpath*:mapping/*.xml
+##激活其他的yml配置文件
+spring:
+  profiles:
+    active: druid
